@@ -1,6 +1,23 @@
-body {
+#home {
   background: orange;
 }
-body section {
-  color: yellow;
+
+#about {
+  background: green;
+}
+
+#resume {
+  background: pink;
+}
+
+#work {
+  background: red;
+}
+
+#testimonial {
+  background: lightcoral;
+}
+
+#contact {
+  background: lightcyan;
 }/*# sourceMappingURL=main.css.map */
