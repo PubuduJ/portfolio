@@ -1,4 +1,5 @@
 let navLinks = document.querySelectorAll("a.inner-link");
+let theme = "dark";
 
 navLinks.forEach((item) => {
   item.addEventListener("click", function () {
@@ -138,7 +139,7 @@ contactFromItems.forEach((item) => {
 });
 
 function toggleMode() {
-  let theme = document.querySelector("html").getAttribute("theme");
+  theme = document.querySelector("html").getAttribute("theme");
 
   if (theme == "dark") {
     theme = "light";
@@ -152,17 +153,53 @@ function toggleMode() {
 document.addEventListener("DOMContentLoaded", function () {
   const link = document.getElementById("requestCVLink");
   const link2 = document.getElementById("requestCVLink2");
+  const toastElement = document.getElementById("cvToast");
+  const toastHeader = toastElement.querySelector(".toast-header");
+  const toastButton = toastElement.querySelector(".toast-button");
+  const toastBody = toastElement.querySelector(".toast-body");
+  const toast = new bootstrap.Toast(toastElement, { delay: 3000 });
+
   link.addEventListener("click", function (event) {
+    if (theme == "dark") {
+      toastElement.style.backgroundColor = "black";
+      toastElement.style.color = "white";
+      toastHeader.style.backgroundColor = "black";
+      toastHeader.style.color = "white";
+      toastBody.style.backgroundColor = "black";
+      toastBody.style.color = "white";
+      toastButton.style.backgroundColor = "white";
+      toastButton.style.color = "white";
+    } else {
+      toastElement.style.backgroundColor = "white";
+      toastElement.style.color = "black";
+      toastHeader.style.backgroundColor = "white";
+      toastHeader.style.color = "black";
+      toastBody.style.backgroundColor = "white";
+      toastBody.style.color = "black";
+    }
     event.preventDefault();
-    alert(
-      "Please send an email to pubudujanith123@gmail.com to request the CV."
-    );
+    toast.show();
   });
   link2.addEventListener("click", function (event) {
+    if (theme == "dark") {
+      toastElement.style.backgroundColor = "black";
+      toastElement.style.color = "white";
+      toastHeader.style.backgroundColor = "black";
+      toastHeader.style.color = "white";
+      toastBody.style.backgroundColor = "black";
+      toastBody.style.color = "white";
+      toastButton.style.backgroundColor = "white";
+      toastButton.style.color = "white";
+    } else {
+      toastElement.style.backgroundColor = "white";
+      toastElement.style.color = "black";
+      toastHeader.style.backgroundColor = "white";
+      toastHeader.style.color = "black";
+      toastBody.style.backgroundColor = "white";
+      toastBody.style.color = "black";
+    }
     event.preventDefault();
-    alert(
-      "Please send an email to pubudujanith123@gmail.com to request the CV."
-    );
+    toast.show();
   });
 });
 
