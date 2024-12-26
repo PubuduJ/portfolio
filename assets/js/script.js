@@ -165,3 +165,21 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 });
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const designation = document.getElementById("designation").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const mailtoLink = `mailto:pubudujanith.dep9@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(
+      `Name: ${name}\nDesignation: ${designation}\n\nMessage:\n${message}`
+    )}`;
+
+    window.location.href = mailtoLink;
+  });

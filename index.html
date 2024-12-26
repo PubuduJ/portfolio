@@ -994,7 +994,9 @@
               </div>
               <div class="writer">
                 <span class="name">Dr. Ravi Wijesiriwardana,</span>
-                <span class="field">Former Senior Lecturer at University of Moratuwa</span>
+                <span class="field"
+                  >Former Senior Lecturer at University of Moratuwa</span
+                >
               </div>
             </div>
           </div>
@@ -1011,25 +1013,34 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 form">
-              <form>
+              <form id="contactForm">
                 <div class="form-item">
                   <label>Name</label>
-                  <input type="text" name="name" />
+                  <input type="text" name="name" id="name" required />
                 </div>
                 <div class="form-item">
-                  <label>Email</label>
-                  <input type="email" name="email" />
+                  <label>Designation</label>
+                  <input
+                    type="text"
+                    name="designation"
+                    id="designation"
+                    required
+                  />
                 </div>
                 <div class="form-item">
                   <label>Subject</label>
-                  <input type="text" name="subject" />
+                  <input type="text" name="subject" id="subject" required />
                 </div>
                 <div class="form-item">
                   <label>Message</label>
-                  <textarea name="message"></textarea>
+                  <textarea name="message" id="message" required></textarea>
                 </div>
                 <div class="text-end">
-                  <button type="submit" class="btn-custom-dark">
+                  <button
+                    type="submit"
+                    class="btn-custom-dark"
+                    style="margin-bottom: 10px"
+                  >
                     Send message
                   </button>
                 </div>
@@ -1037,20 +1048,20 @@
             </div>
             <div class="col-lg-6 info">
               <div class="item">
-                <i class="las la-phone"></i>
+                <i class="las la-envelope"></i>
                 <div class="text">
-                  <span class="title">Phone number:</span>
-                  <a href="tel:+1234567890"
-                    >044 20 7946 0499 - 044 20 7946 0135</a
+                  <span class="title">Primary Email:</span>
+                  <a href="mailto:pubudujanith123@gmail.com"
+                    >pubudujanith123@gmail.com</a
                   >
                 </div>
               </div>
               <div class="item">
                 <i class="las la-envelope"></i>
                 <div class="text">
-                  <span class="title">Email:</span>
-                  <a href="mailto:cheetah.academy.sp@gmail.com"
-                    >cheetah.academy.sp@gmail.com</a
+                  <span class="title">Secondary Email:</span>
+                  <a href="mailto:pubudujanith.dep9@gmail.com"
+                    >pubudujanith.dep9@gmail.com</a
                   >
                 </div>
               </div>
@@ -1058,10 +1069,7 @@
                 <i class="las la-map-marker-alt"></i>
                 <div class="text">
                   <span class="title">Location:</span>
-                  <p>
-                    989 Springfield Road London EC49 3OE<br />
-                    United kingdom 3466e.
-                  </p>
+                  <p>Horana, Sri Lanka.</p>
                 </div>
               </div>
             </div>
