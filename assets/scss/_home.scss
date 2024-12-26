@@ -8,6 +8,7 @@
 
     img.person-circle {
       margin-bottom: 24px;
+      width: 50px;
     }
 
     h1 {
@@ -98,7 +99,7 @@
       transition: all 0.3s;
 
       &:hover {
-        filter: saturate(200%) sepia(1);
+        filter: saturate(80%) sepia(0.4);
       }
     }
   }

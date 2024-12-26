@@ -21,11 +21,7 @@ document
   });
 
 var options = {
-  strings: [
-    "Front-End web developer",
-    "Back-End web developer",
-    "Web designer",
-  ],
+  strings: ["Software Engineer", "Researcher", "Lecturer"],
   loop: true,
   typeSpeed: 70,
   backSpeed: 10,
@@ -146,11 +142,19 @@ function toggleMode() {
 
   if (theme == "dark") {
     theme = "light";
-    new Audio("./assets/audio/light.wav").play();
   } else {
     theme = "dark";
-    new Audio("./assets/audio/dark.wav").play();
   }
 
   document.querySelector("html").setAttribute("theme", theme);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const link = document.getElementById("requestCVLink");
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    alert(
+      "Please send an email to pubudujanith123@gmail.com to request the CV."
+    );
+  });
+});
