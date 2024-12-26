@@ -151,7 +151,14 @@ function toggleMode() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const link = document.getElementById("requestCVLink");
+  const link2 = document.getElementById("requestCVLink2");
   link.addEventListener("click", function (event) {
+    event.preventDefault();
+    alert(
+      "Please send an email to pubudujanith123@gmail.com to request the CV."
+    );
+  });
+  link2.addEventListener("click", function (event) {
     event.preventDefault();
     alert(
       "Please send an email to pubudujanith123@gmail.com to request the CV."
