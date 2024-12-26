@@ -36,6 +36,10 @@
           display: flex;
           margin-bottom: 16px;
 
+          a > span:hover {
+            color: $gray_light;
+          }
+
           .value {
             color: $gray;
             margin-left: 4px;
@@ -204,24 +208,6 @@
 
           .year {
             color: #ff9f76;
-          }
-        }
-      }
-    }
-  }
-
-  .certificates {
-    margin-top: 120px;
-    margin-bottom: 200px;
-
-    .items {
-      .item {
-        img {
-          width: 100%;
-          transition: all 0.3s;
-
-          &:hover {
-            transform: scale(1.1);
           }
         }
       }
