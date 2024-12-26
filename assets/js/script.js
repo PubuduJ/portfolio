@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const toastHeader = toastElement.querySelector(".toast-header");
   const toastButton = toastElement.querySelector(".toast-button");
   const toastBody = toastElement.querySelector(".toast-body");
-  const toast = new bootstrap.Toast(toastElement, { delay: 3000 });
+  const toast = new bootstrap.Toast(toastElement, { delay: 1500 });
 
   link.addEventListener("click", function (event) {
     if (theme == "dark") {
